@@ -1,0 +1,21 @@
+li{
+  list-style: none;
+}
+
+li:nth-child(even){
+  background-color: lightgrey;
+  margin: 0px;
+}
+p{
+  margin: 0px;
+  font-size: 18px;
+}
+
+ul{
+  width: 500px;
+  border: 2px solid black;
+}
+
+.chat-form{
+  /*background-color: lightblue;*/
+}

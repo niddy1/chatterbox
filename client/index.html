@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="ChatApp">
+  <head>
+    <meta charset="utf-8">
+    <title>chatterBox</title>
+    <link rel="stylesheet" href="/css/styles.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="/js/app.js" type="text/javascript"></script>
+  <body>
+    <section ng-controller="ChatsController">
+      <h3>{{ welcomeMessage }}</h3>
+      <ul>
+        <li ng-repeat='chat in chats | limitTo:-10'>
+          <p>
+            {{chat.username}}: {{chat.message}}
+          </p>
+        </li>
+      </ul>
+
+      <form class="chat-form"ng-submit="sendChat()">
+        <input ng-model="newChat.username" type="text" placeholder="username">
+        <input ng-model="newChat.message" type="text" placeholder="message">
+        <input type="submit">
+
+      </form>
+
+    </section>
+  </body>
+</html>
