@@ -1,5 +1,6 @@
 li{
   list-style: none;
+
 }
 
 li:nth-child(even){
@@ -12,10 +13,18 @@ p{
 }
 
 ul{
-  width: 500px;
   border: 2px solid black;
 }
 
 .chat-form{
+  width: 50%;
+  margin: 0 auto;
   /*background-color: lightblue;*/
+}
+
+.chatroom{
+  border: 5px darkblue solid;
+  width: 50%;
+  margin: 10% auto;
+  border-radius: 20px;
 }
